@@ -1,0 +1,102 @@
+/**General**/
+*{
+	margin:0px;
+	padding:0px;
+	font: normal 16px'Ubuntu Mono', sans-serif;
+	font-weight: 400;
+}
+
+h1{
+	font: bold 28px 'Ubuntu Mono', sans-serif;
+	text-align: center;
+}
+
+h2{
+	font: bold 22px 'Ubuntu Mono', sans-serif;
+}
+
+header, section, footer, aside, nav, article, hgroup{
+	display:block;
+}
+
+body{
+	width: 100%;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	background-color: #222;
+}
+
+section{
+	background-size:cover;
+	padding: 0px 30px 20px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+}
+
+article{
+	padding: 5px 10px
+}
+
+#wrapper{
+	max-width: 1000px;
+	margin: 20px 0px;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-flex: 1;
+}
+
+.dark{
+	background-color:#222;
+	color:#fff;
+}
+
+
+/**Sections**/
+
+#top-header{
+	padding: 20px;
+}
+
+dl dt{
+	padding: 20px 5px 4px;
+}
+
+dl dt:first-child{
+	padding: 5px 5px 4px;
+}
+
+dl dd{
+	display:list-item;
+	list-style-type: circle;
+	-webkit-margin-start: 40px;
+	padding-bottom: 5px;
+}
+
+#skills p{
+	margin: 10px 0px;
+}
+
+#work p{
+	text-decoration: underline;
+	font-style: italic;
+}
+
+#main-footer{
+	min-height:50px;
+	text-align:center;
+}
+
+#main-footer a{
+	
+	text-decoration: none;
+	color:#F5AEF2;
+	font-size: 14px;
+}
+
+#main-footer a:hover{
+	text-decoration:underline;
+}
+
+#footnote{
+	padding-top: 15px;
+}
