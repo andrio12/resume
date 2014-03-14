@@ -83,6 +83,9 @@ dl dd{
 	-moz-margin-start:40px;
 	-khtml-margin-start:40px;
 	padding-bottom: 5px;
+	<!--[if IE]>
+	margin-left: 40px;
+	<![endif]-->
 
 
 }
