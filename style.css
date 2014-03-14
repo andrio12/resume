@@ -23,6 +23,13 @@ body{
 	width: 100%;
 	display:-webkit-box;
 	-webkit-box-pack:center;
+	/* Internet Explorer 10 */
+	display:-ms-flexbox;
+	-ms-flex-pack:center;
+	/* Firefox */
+	display:-moz-box;
+	-moz-box-pack:center;
+
 	background-color: #222;
 }
 
@@ -43,6 +50,10 @@ article{
 	display:-webkit-box;
 	-webkit-box-orient:vertical;
 	-webkit-box-flex: 1;
+	/* Firefox */
+	display:-moz-box;
+	-moz-box-orient:vertical;
+	-moz-box-flex:1;
 }
 
 .dark{
@@ -69,7 +80,11 @@ dl dd{
 	display:list-item;
 	list-style-type: circle;
 	-webkit-margin-start: 40px;
+	-moz-margin-start:40px;
+	-khtml-margin-start:40px;
 	padding-bottom: 5px;
+
+
 }
 
 #skills p{
