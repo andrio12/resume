@@ -81,6 +81,21 @@ dl dd{
 	font-style: italic;
 }
 
+img{
+	height: 100px;
+	width: 100px;
+	float: right;
+}
+
+.clear{
+	width: 100%;
+	clear: both;
+}
+
+#info h2{
+	padding-top: 50px;
+}
+
 #main-footer{
 	min-height:50px;
 	text-align:center;
