@@ -128,3 +128,16 @@ img{
 #footnote{
 	padding-top: 15px;
 }
+
+/**IE piece of shitmix**/
+.ie10, .ie11{
+	font-family: tahoma, sans-serif;
+}
+
+.ie10, .ie11 dl dd{
+	margin-left: 40px;
+}
+
+.ie10 img, .ie11 img{
+	visibility: hidden;
+}

@@ -12,21 +12,16 @@
 		img{visibility: hidden;}
 	</style>
 	<![endif]-->
-	<!--[if IE 10]>
-	<style> 
-		*{font-family:tahoma,sans-serif;}
-		dl dd{margin-left: 40px;}
-		img{visibility: hidden;}
-	</style>
-	<![endif]-->
-	<!--[if IE 11]>
-	<style> 
-		*{font-family:tahoma,sans-serif;}
-		dl dd{margin-left: 40px;}
-		img{visibility: hidden;}
-	</style>
-	<![endif]-->
-	}
+	<!--[if !IE]><!--><script>  
+	if (/*@cc_on!@*/false) {  
+    document.documentElement.className+=' ie10';  
+	}  
+	</script><!--<![endif]-->
+	<!--[if !IE]><!--><script>  
+	if (/*@cc_on!@*/false) {  
+    document.documentElement.className+=' ie11';  
+	}  
+	</script><!--<![endif]-->  
 </head>
 <body>
 <div id="wrapper">
