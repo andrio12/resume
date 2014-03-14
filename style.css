@@ -79,9 +79,7 @@ dl dt:first-child{
 dl dd{
 	display:list-item;
 	list-style-type: circle;
-	-webkit-margin-start: 40px;
-	-moz-margin-start:40px;
-	-khtml-margin-start:40px;
+	margin-left: 40px;
 	padding-bottom: 5px;
 }
 
@@ -129,15 +127,15 @@ img{
 	padding-top: 15px;
 }
 
-/**IE piece of shitmix**/
-.ie10, .ie11{
+/**IE 10 piece of shitmix**/
+.ie10{
 	font-family: tahoma, sans-serif;
 }
 
-.ie10, .ie11 dl dd{
+.ie10 dl dd{
 	margin-left: 40px;
 }
 
-.ie10 img, .ie11 img{
+.ie10 img,{
 	visibility: hidden;
 }
