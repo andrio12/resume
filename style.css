@@ -107,6 +107,16 @@ img{
 	padding-top: 50px;
 }
 
+#recom a{
+	color: #dbdbdb;
+	text-decoration: none;
+}
+
+#recom a:hover{
+	color: #ebebeb;
+	text-decoration: underline;
+}
+
 #main-footer{
 	min-height:50px;
 	text-align:center;
