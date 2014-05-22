@@ -1,0 +1,17 @@
+body{
+	padding-top: 5em;
+	background-image:url("../images/bg6.png");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+.panel{
+	opacity:0.92;
+}
+
+#profilepix{
+	float:right;
+	height: 100px;
+	margin: 1px;
+	border: 1px solid #eee;
+}
