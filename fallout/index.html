@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fallout</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<h1>Fallout 4: S.P.E.C.I.A.L</h1>
+	<p>
+		<input id="total" value="21" class="qty" />
+	</p>
+    <p> Strength
+        <button id="minus1" class="minus"/><</button>
+        	<input id="qty1" type="text" value="1" class="qty"/>
+        <button id="add1" class="add"/>></button>
+    </p>
+    <p> Perception
+        <button id="minus2" class="minus"/><</button>
+        	<input id="qty2" type="text" value="1" class="qty"/>
+        <button id="add2" class="add"/>></button>
+    </p>
+    <p> Endurance
+        <button id="minus3" class="minus"/><</button>
+        	<input id="qty3" type="text" value="1" class="qty"/>
+        <button id="add3" class="add"/>></button>
+    </p>
+    <p> Charisma
+        <button id="minus4" class="minus"/><</button>
+        	<input id="qty4" type="text" value="1" class="qty"/>
+        <button id="add4" class="add"/>></button>
+    </p>
+    <p> Intelligence
+        <button id="minus5" class="minus"/><</button>
+        	<input id="qty5" type="text" value="1" class="qty"/>
+        <button id="add5" class="add"/>></button>
+    </p>
+    <p> Agility
+        <button id="minus6" class="minus"/><</button>
+        	<input id="qty6" type="text" value="1" class="qty"/>
+        <button id="add6" class="add"/>></button>
+    </p>
+    <p> Luck
+        <button id="minus7" class="minus"/><</button>
+        	<input id="qty7" type="text" value="1" class="qty"/>
+        <button id="add7" class="add"/>></button>
+    </p>
+
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+
+var totalPointsAvailable = 21;
+
+$(function () {
+    $('.add').on('click',function(){
+        var $qty=$(this).closest('p').find('.qty');
+        var $qty2=$("#total").closest('p').find('.qty');
+        var currentVal = parseInt($qty.val());
+        var totalVal = parseInt($qty2.val());
+        if (!isNaN(currentVal) && currentVal < 10 && totalVal > 0) {
+            $qty.val(currentVal + 1);
+            $qty2.val(totalVal - 1);
+        }
+    });
+    $('.minus').on('click',function(){
+        var $qty=$(this).closest('p').find('.qty');
+        var $qty2=$("#total").closest('p').find('.qty');
+        var currentVal = parseInt($qty.val());
+        var totalVal = parseInt($qty2.val());
+        if (!isNaN(currentVal) && currentVal > 1) {
+            $qty.val(currentVal - 1);
+            $qty2.val(totalVal + 1);
+        }
+    });
+});
+
+
+</script>
+
+</body>
+</html>
