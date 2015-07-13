@@ -1,8 +1,11 @@
 body{
 	padding-top: 5em;
+	/*
 	background-image:url("../images/bg.jpg");
 	background-repeat:no-repeat;
 	background-attachment:fixed;
+	*/
+	background: #4f4f4f;
 }
 
 .panel{
